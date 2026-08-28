@@ -8,7 +8,7 @@ Each algorithm lives in its own numbered folder.
 
 ## Core list
 
-- [ ] **1. Deutsch-Jozsa** : first proof of quantum advantage on a contrived problem. Oracle generator: pick constant or balanced, circuit reveals it in one query.
+- [X] **1. Deutsch-Jozsa** : first proof of quantum advantage on a contrived problem. Oracle generator: pick constant or balanced, circuit reveals it in one query.
 - [ ] **2. Bernstein-Vazirani** : extracting a hidden bitstring in one query. "Guess my secret" game, quantum player wins in 1 shot vs n classical queries.
 - [ ] **3. Quantum walks** : ballistic vs diffusive spreading. 1D Hadamard walk against the classical version, then walks on graphs.
 - [ ] **4. Grover's algorithm** : quadratic speedup on unstructured search. Sudoku or graph-colouring solver with a custom oracle.
