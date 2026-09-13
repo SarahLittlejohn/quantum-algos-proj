@@ -33,7 +33,9 @@ def build_example_circuit():
 
     qc.h(0)   # put qubit 0 into superposition
     qc.x(1)   # flip qubit 1 from |0> to |1>
+    qc.s(1)   # quarter phase turn on qubit 1
     qc.z(0)   # phase-flip qubit 0 (invisible here - no interference yet to reveal it)
+    qc.h(0)   # apply Hadamard gate to qubit 0
     return qc
 
 

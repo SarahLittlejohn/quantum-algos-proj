@@ -57,9 +57,23 @@ if __name__ == "__main__":
     print(f"sanity check passed: both amplitudes equal 1/sqrt(2) = {expected:.3f}")
 
     # Try it yourself:
+    print("My task...")
+    sv_singlet = Statevector.from_label("01")
+    sv_singlet1 = sv_singlet.evolve(step1)
+    show_amplitudes(sv_singlet1, "after H on qubit 0")
+    stepCNOT = QuantumCircuit(2)
+    stepCNOT.cx(0,1)
+    sv_singlet2 = sv_singlet1.evolve(stepCNOT)
+    show_amplitudes(sv_singlet2, "after CNOT")
+    stepX = QuantumCircuit(2)
+    stepX.x(0)
+    sv_singlet3 = sv_singlet2.evolve(stepX)
+    show_amplitudes(sv_singlet3, "after X on qubit 0")
+
+
     # Build the state (|01> - |10>) / sqrt(2) (the singlet state) by starting
     # from Statevector.from_label("01"), applying H to qubit 0, then CX(0 -> 1),
-    # then a Z somewhere to flip the sign on the right term. Print the
+    # then a X somewhere to flip the sign on the right term. Print the
     # amplitudes and check the signs match what you'd compute by hand.
     # Next file adds measurement - turning this exact state into random
     # classical outcomes, the way a real quantum computer would.

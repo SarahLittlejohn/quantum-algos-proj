@@ -6,9 +6,9 @@ Generated with the `learning-curriculum` skill (`.claude/skills/learning-curricu
 
 ## Basics
 
-- [ ] **1. Circuits and gates** (`01_circuits_and_gates.py`) : `QuantumCircuit`, registers, single-qubit gates (X, H, Z, Y, S, T), drawing circuits.
-- [ ] **2. Multi-qubit gates** (`02_multi_qubit_gates.py`) : CX/CNOT, CZ, SWAP, Toffoli, and Qiskit's little-endian qubit ordering.
-- [ ] **3. Statevector simulation** (`03_statevector_simulation.py`) : exact complex amplitudes via `Statevector`, `.evolve()`.
+- [X] **1. Circuits and gates** (`01_circuits_and_gates.py`) : `QuantumCircuit`, registers, single-qubit gates (X, H, Z, Y, S, T), drawing circuits.
+- [X] **2. Multi-qubit gates** (`02_multi_qubit_gates.py`) : CX/CNOT, CZ, SWAP, Toffoli, and Qiskit's little-endian qubit ordering.
+- [X] **3. Statevector simulation** (`03_statevector_simulation.py`) : exact complex amplitudes via `Statevector`, `.evolve()`.
 - [ ] **4. Measurement and sampling** (`04_measurement_and_sampling.py`) : classical registers, `measure()`, the `StatevectorSampler` primitive, reading counts.
 - [ ] **5. Parameterized and rotation gates** (`05_parameterized_and_rotation_gates.py`) : RX/RY/RZ, `Parameter` objects, binding values.
 - [ ] **6. Custom gates and oracles** (`06_custom_gates_and_oracles.py`) : packaging sub-circuits as reusable gates, rebuilding Deutsch-Jozsa's oracle test in Qiskit.
